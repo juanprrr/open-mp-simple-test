@@ -3,26 +3,9 @@
 This program will numerically compute the Taylor expansion 
 for the approximation of euler constant. 
         e = 1/1! + 1/2! + 1/3! + 1/4! + ... + 1/n!
-The program was parallelized using OpenMP by adding just
-four lines 
 
-(1) A line to include omp.h -- the include file that 
-contains OpenMP's function prototypes and constants.
-
-(2) A pragma that tells OpenMP to create a team of threads
-
-(3) A pragma to cause one of the threads to print the
-number of threads being used by the program.
-
-(4) A pragma to split up loop iterations among the team
-of threads.  This pragma includes 2 clauses to (1) create a 
-private variable and (2) to cause the threads to compute their
-sums locally and then combine their local sums into a 
-single global value.
-
-History: Written by Tim Mattson, 11/99.
-
-*/#include <stdio.h>
+*/
+#include <stdio.h>
 #include <omp.h>
 
 static int num_terms = 1000000;
