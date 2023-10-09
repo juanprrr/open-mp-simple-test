@@ -1,0 +1,4 @@
+num_threads = 1 computed pi = 3.141592653590426 in 0.480000019073486 seconds threads =  1 % error = 0.000000000020257
+num_threads = 2 computed pi = 3.141592653589910 in 0.272000074386597 seconds threads =  2 % error = 0.000000000003817
+num_threads = 3 computed pi = 3.141592653589570 in 0.210999965667725 seconds threads =  3 % error = -0.000000000006997
+num_threads = 4 computed pi = 3.141592653589683 in 0.190000057220459 seconds threads =  4 % error = -0.000000000003421
