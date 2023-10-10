@@ -62,7 +62,7 @@ def plotter(path):
 
 
 if __name__ == "__main__":
-    #path_pi = "results_pi/*.txt"
+    path_pi = "results_pi/*.txt"
     path_e  = "results_e/*.txt"
-    #plotter(path_pi)
+    plotter(path_pi)
     plotter(path_e)
