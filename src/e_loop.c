@@ -8,21 +8,20 @@ for the approximation of euler constant.
 #include <stdio.h>
 #include <omp.h>
 
-static int num_terms = 1000000;
+static int num_terms = 10000000;
 double e;
 double reference_e = 2.718281828459045; 
 
 int main() {
     int num_threads = omp_get_num_procs(); 
     double start_time, run_time;
-    double tick = omp_get_wtick();
 
     for (int t = 1; t <= num_threads; t++) {
         e = 1.0; 
         omp_set_num_threads(t);
         start_time = omp_get_wtime();
         
-#pragma omp parallel
+#pragma omp parallel 
 {
     #pragma omp single
     printf("num_threads = %d ", omp_get_num_threads());
@@ -36,7 +35,7 @@ int main() {
     }
 }
         run_time = (omp_get_wtime() - start_time);
-        printf("computed e = %3.15f in %3.15f seconds threads = %d %% error = %3.15f\n", e, run_time, t, (e - reference_e) * 100.0 / reference_e);
+        printf("computed e = %3.15f in %3.25f seconds threads = %d %% error = %3.15f\n", e, run_time, t, (e - reference_e) * 100.0 / reference_e);
     }
 
     return 0;

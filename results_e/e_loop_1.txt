@@ -1,4 +1,0 @@
-num_threads = 1 computed e = 2.718281828459046 in 0.052000045776367 seconds threads = 1 % error = 0.000000000000016
-num_threads = 2 computed e = 2.718283828459045 in 0.034999847412109 seconds threads = 2 % error = 0.000073575888245
-num_threads = 3 computed e = 2.718286328452296 in 0.021000146865845 seconds threads = 3 % error = 0.000165545500226
-num_threads = 4 computed e = 2.718289161792379 in 0.026999950408936 seconds threads = 4 % error = 0.000269778256880

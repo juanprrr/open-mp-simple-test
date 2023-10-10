@@ -60,6 +60,7 @@ def plotter(path):
     plt.tight_layout()
     plt.show()
 
+
 if __name__ == "__main__":
     #path_pi = "results_pi/*.txt"
     path_e  = "results_e/*.txt"
