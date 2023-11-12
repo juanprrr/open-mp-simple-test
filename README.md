@@ -15,3 +15,4 @@
     - Generar resultados de daxpy.c : bin/daxpy
     - Generar graficas de pi_loop.c y e_loop.c: ejecutar script plot_result.py
     - Generar graficas de daxpy.c: ejecutar script daxpy_plot.py
+### Resultados
